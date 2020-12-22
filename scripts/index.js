@@ -18,3 +18,5 @@ playerBtn.forEach((btn, index) => btn.addEventListener('click', () => {
         btn.classList.add('active');
         playerBlock[index].classList.add('active');
 }));
+
+videoPlayerInit();
