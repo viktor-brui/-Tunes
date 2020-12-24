@@ -11,6 +11,7 @@ export const musicPlayerInit = () => {
     const audioProgressTiming = document.querySelector('.audio-progress__timing');
     const audioTimePassed = document.querySelector('.audio-time__passed');
     const audioTimeTotal = document.querySelector('.audio-time__total');
+    const audioVolume = document.querySelector('.audio-volume');
 
     const playList = ['hello', 'flow', 'speed'];
 
@@ -97,5 +98,9 @@ export const musicPlayerInit = () => {
         const allWidth = audioProgress.clientWidth;
         const progress = (x / allWidth) * audioPlayer.duration;
         audioPlayer.currentTime = progress;
+    });
+
+    audioVolume.addEventListener('input', () => {
+        audioPlayer.volume = audioVolume.value / 100;
     });
 };

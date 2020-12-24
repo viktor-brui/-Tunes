@@ -670,3 +670,9 @@ input[type="range"]:focus::-ms-fill-upper {
 .radio-volume__block {
   padding-left: 30px;
 }
+.audio-volume__block {
+  padding-left: 30px;
+}
+.audio-volume {
+  max-width: 100px;
+}
