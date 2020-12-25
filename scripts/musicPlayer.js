@@ -103,4 +103,10 @@ export const musicPlayerInit = () => {
     audioVolume.addEventListener('input', () => {
         audioPlayer.volume = audioVolume.value / 100;
     });
+
+    musicPlayerInit.stop = () => {
+        audioPlayer.pause();
+        // audioButtonPlay.classList.toggle('fa-play');
+        // audioButtonPlay.classList.toggle('fa-pause');
+    };
 };
